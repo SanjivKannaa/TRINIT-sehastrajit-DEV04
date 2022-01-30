@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script>
+        function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        window.open("https://www.linkedin.com/search/results/all/?keywords=" + x);
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fruits API</title>
+</head>
+<body>
+    <label>Welcome to Sehastrajit Linkedin Search           </label>
+
+
+
+    <form name="myForm"  onsubmit="validateForm()" method="post">
+        <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
