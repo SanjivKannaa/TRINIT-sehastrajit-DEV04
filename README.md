@@ -2,7 +2,7 @@
 
 SUBMITTED BY:
  Team : Sehastrajit
- . Team members
+ \nTeam members
  - sanjiv kannaa jeganathan
  - sehastrajit s
 
