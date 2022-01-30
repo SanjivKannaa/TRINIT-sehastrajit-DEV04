@@ -1,14 +1,12 @@
 import tornado.ioloop
 import tornado.web
 
-class home_RequestHandler(tornado.web.RequestHandler):
+class homeRequestHandler(tornado.web.RequestHandler):
     def get(self):
         #self.write('Welcome to my server!\n\ngoogle\napple\namazon\ndigilocker\ndiscord\nfacebook\nfiitjee\nfitbit\ninstagram\nmicrosoft\nsony\nwalker\ncarparking\nwifi')
         self.render("index.html")
-    def post():
-        pass
 
-class _RequestHandler(tornado.web.RequestHandler):
+class RequestHandler(tornado.web.RequestHandler):
     def get(self):
         #self.write('Welcome to my server!\n\ngoogle\napple\namazon\ndigilocker\ndiscord\nfacebook\nfiitjee\nfitbit\ninstagram\nmicrosoft\nsony\nwalker\ncarparking\nwifi')
         self.render("index.html")
@@ -23,11 +21,10 @@ class _RequestHandler(tornado.web.RequestHandler):
 
 if __name__ == '__main__':
     app =  tornado.web.Application([
-        (r"/home",  home_RequestHandler),
-        (r"/",  _RequestHandler),
-        ()
+        (r"/home",  homeRequestHandler),
+        (r"/",  RequestHandler)
     ])
-    port = 8080
+    port = 1234
     app.listen(port)
     print('working on port', port)
     tornado.ioloop.IOLoop.current().start() #infinite loop  
