@@ -24,7 +24,8 @@ if __name__ == '__main__':
         (r"/home",  homeRequestHandler),
         (r"/",  RequestHandler)
     ])
-    port = 1234
+    port = 9090
     app.listen(port)
     print('working on port', port)
+    print("open your browser and go to http://localhost:9090")
     tornado.ioloop.IOLoop.current().start() #infinite loop  
