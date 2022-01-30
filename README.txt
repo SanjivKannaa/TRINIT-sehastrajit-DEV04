@@ -25,5 +25,8 @@ Steps to Run the Program
 	4. enter the email address of the person you want to find the linked account of
 	5. you will be displayed the details and the linkedin account will be opened!
 
+Algorithm and Workdone
+	The email addressed given by the user is used to search any similariry in the linkedin website after performing some formatting to the string(email address) and the output is scrapped to find the details of the user. the obtained details is shown to the user and also the linkedin account of the corresponding email is opened.
+
 
 Execution Video link - https://drive.google.com/file/d/1_3PX58JWJ2wX_7_jHkSUq4efKpD3_C8D/view?usp=sharing
