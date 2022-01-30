@@ -5,17 +5,33 @@
     <script>
         function validateForm() {
         let x = document.forms["myForm"]["fname"].value;
-        window.open("https://www.linkedin.com/search/results/all/?keywords=" + x);
+        s = "";
+        for(let i=0;i<x.length;i++){
+            if(x[i] in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]){
+                continue;
+            }
+            else{
+                if(x[i] == "@"){
+                    break;
+                }else{
+                    s += x[i];
+                }
+            }
+            
+        }
+        var jsn = "{name : " + s + ", mail address : " + x + ", profile : https://www.linkedin.com/search/results/all/?keywords=" + s + "}";
+        document.write("https://www.linkedin.com/search/results/all/?keywords=" + s);
+        window.open("https://www.linkedin.com/search/results/all/?keywords=" + s, "_self");
         }
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fruits API</title>
+    <title>Sehastrajit | Home</title>
 </head>
 <body>
-    <label>Welcome to Sehastrajit Linkedin Search           </label>
+    <label>Welcome to Linkedin Search</label>
 
 
 
